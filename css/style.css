@@ -6,7 +6,7 @@
 
 body {
     color: var(--color-primery);
-    font-family: 'Roboto',  sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 400;
     background-color: #fff;
@@ -17,9 +17,9 @@ body {
     text-decoration: none;
     font-size: 26px;
     line-height: 1.19;
-    font-weight:700;
+    font-weight: 700;
     letter-spacing: 0.03em;
-    
+
 }
 
 .logo-blue {
@@ -73,10 +73,12 @@ body {
 
 .contacts-header:hover {
     color: var(--color-accent);
+    fill: var(--color-accent);
 }
 
 .contacts-header:focus {
     color: var(--color-accent);
+    fill: var(--color-accent);
 }
 
 .contacts-footer {
@@ -85,12 +87,19 @@ body {
     font-weight: 400;
     letter-spacing: 0.03em;
     text-decoration: none;
-    
+}
+
+.contacts-header-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .adress-top {
-margin-top: 9px;
+    margin-top: 9px;
 }
+
 .contacts-footer:hover {
     color: var(--color-accent);
 }
@@ -100,7 +109,10 @@ margin-top: 9px;
 }
 
 .block-first {
-    background-color: #2f303a;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('/images/hero-img.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     height: 600px;
     padding-top: 200px;
@@ -115,7 +127,7 @@ margin-top: 9px;
 
 .block-second-sub {
     background-color: #fff;
-        padding-bottom: 94px;
+    padding-bottom: 94px;
 }
 
 .block-third {
@@ -133,6 +145,12 @@ margin-top: 9px;
 
 .block-fifth {
     background-color: #fff;
+    padding-bottom: 94px;
+}
+
+.block-sixth {
+    background-color: #fff;
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 
@@ -165,10 +183,19 @@ margin-top: 9px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin:0;
+    margin: 0;
 }
 
 .title-fourth {
+    font-size: 36px;
+    line-height: 1.17;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+
+.title-fifth {
     font-size: 36px;
     line-height: 1.17;
     font-weight: 700;
@@ -201,7 +228,7 @@ margin-top: 9px;
 }
 
 .text-box-second {
-    padding: 20px 24px ;
+    padding: 20px 24px;
 }
 
 .title-imagine {
@@ -227,7 +254,7 @@ margin-top: 9px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-align: center;
-    margin:0 0 10px 0;
+    margin: 0 0 10px 0;
     padding: 0;
 }
 
@@ -296,7 +323,7 @@ margin-top: 9px;
     background-color: #fff;
 }
 
-.footer{
+.footer {
     background-color: #2F303A;
     padding: 60px 0 60px 0;
 }
@@ -324,6 +351,10 @@ margin-top: 9px;
     border: 1px solid #eee;
 }
 
+.imagine-box-secondary:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .container {
     max-width: 1200px;
     padding-left: 15px;
@@ -338,11 +369,11 @@ margin-top: 9px;
 }
 
 .head-conteiner {
-display: flex;
-justify-content: space-between;
-padding: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
 
-flex-grow: 1;
+    flex-grow: 1;
 }
 
 .menu {
@@ -399,7 +430,7 @@ flex-grow: 1;
     gap: 30px;
     margin-top: 50px;
     margin-bottom: 0;
-    padding:0;
+    padding: 0;
 }
 
 .ul-fourth {
@@ -428,31 +459,179 @@ flex-grow: 1;
     margin-left: 0;
     margin-right: 0;
     margin-top: 50px;
-    margin-bottom: 0 ;
+    margin-bottom: 0;
     padding: 0;
 }
 
 .img-first {
-max-width: 370px;
-max-height: 294px;
+    max-width: 370px;
+    max-height: 294px;
 }
 
 .img-second {
-width: 270px;
-height: 260px
+    width: 270px;
+    height: 260px
 }
 
 .img-third {
-    width: 370px; 
+    width: 370px;
     height: 294px;
 }
 
-.imagine-box {
-    max-width: 270px;
-    max-height: 368px;
+.imagine-box { 
     background-color: #fff;
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.title-box {
+    border-radius: 4px;
+    background-color: #F5F4FA;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+}
+
+.title-box-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.net-list { 
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin-top: 16px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.net-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    border-radius: 50%;
+    background-color: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.net-link:hover {
+    background-color: var(--color-accent);
+}
+
+.net-link:focus {
+    background-color: var(--color-accent);
+}
+
+.net-link:hover .net-icon {
+    fill: #fff;
+}
+
+.net-link:focus .net-icon {
+    fill: #fff;
+}
+
+.net-icon {
+    fill: var(--color-secondary);
+}
+
+.client-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.client-item:hover  {
+    border-color: var(--color-accent);
+}
+
+.client-item:focus {
+    border-color: var(--color-accent);
+}
+
+.client-item:hover .client-icon {
+    fill: var(--color-accent);
+}
+
+.client-item:focus .client-icon {
+    fill: var(--color-accent);
+}
+
+
+.client-item{
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    padding: 16px 32px;
+    border: 1px solid #AFB1B8;
+}
+
+.client-icon {
+fill: var(--color-secondary);
+}
+
+
+.ul-footer {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 0;
+    margin: 0;
+    justify-content: start;
+}
+
+.net-text {
+    font-weight: 700;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.net-list-footer {
+    list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+        padding: 0;
+}
+
+.net-link-footer {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.net-link-footer:hover {
+    background-color:var(--color-accent)
+}
+
+.net-link-footer:focus {
+    background-color: var(--color-accent)
+}
+
+.net-icon-footer {
+    fill: #fff;
 }
